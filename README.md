@@ -1,6 +1,6 @@
 # KodiProtonVPNMediaStreamingAutomator
 
-Automatically launch Kodi with ProtonVPN connected — then disconnect VPN when Kodi closes.
+Automatically launch Kodi with ProtonVPN connected then disconnect VPN when Kodi closes.
 
 ## Features
 
