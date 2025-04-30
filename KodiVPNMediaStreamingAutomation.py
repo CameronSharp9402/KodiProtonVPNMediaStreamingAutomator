@@ -13,7 +13,7 @@ except ImportError:
     import psutil
 
 
-# Update these paths to match your system
+# Make sure these match your file locations otherwise the script will throw an error!
 kodi_path = r"C:\Program Files\Kodi\kodi.exe"
 protonvpn_path = r"C:\Program Files\Proton\VPN\ProtonVPN.Launcher.exe"
 
