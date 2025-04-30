@@ -1,24 +1,29 @@
 # KodiProtonVPNMediaStreamingAutomator
 
-A simple automation script that launches **Kodi** and automatically connects to **ProtonVPN**, then disconnects when Kodi closes.
+Automatically launch Kodi with ProtonVPN connected — then disconnect VPN when Kodi closes.
 
 ## Features
 
-- Launches ProtonVPN (auto-connect must be enabled)
-- Starts Kodi
-- Automatically kills ProtonVPN when Kodi exits
+- Auto-connects to ProtonVPN when you launch Kodi
+- Auto-disconnects VPN when Kodi is closed
+- All-in-one `.exe` — no Python required!
+
+## Download
+
+Grab the `.exe` from the [Releases](https://github.com/CameronSharp9402/KodiVPNLauncher/releases) page.
 
 ## Requirements
 
-- Python 3.10+
-- `psutil` module: `pip install psutil`
-- ProtonVPN installed with auto-connect enabled
-- ***Optional, make sure the kill switch in enabled***
+- **Kodi** installed at: `C:\Program Files\Kodi\kodi.exe`
+- **ProtonVPN** installed at: `C:\Program Files\Proton\VPN\ProtonVPN.Launcher.exe`
+- ProtonVPN must have **Auto-Connect** enabled
+- Run `.exe` as Administrator to allow VPN disconnect
 
-## Usage
+## Optional for Developers
 
-1. Install dependencies
-2. Run `kodi_vpn_launcher.py`
-3. Build `.exe` with:  
-   ```bash
-   pyinstaller --onefile KodiVPNMediaStreamingAutomation.py
+If you'd rather run the Python script:
+
+```bash
+pip install -r requirements.txt
+python kodi_vpn_launcher.py
+
